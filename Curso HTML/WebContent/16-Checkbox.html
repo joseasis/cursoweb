@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CheckBox</title>
+</head>
+<body>
+<h1>Control CheckBox</h1>
+<script type="text/javascript">
+function contarSeleccionados()
+	{var cant=0;
+	if (document.getElementById("checkbox1").checked){cant++;}
+	if (document.getElementById("checkbox2").checked){cant++;}
+	if (document.getElementById("checkbox3").checked){cant++;}
+	if (document.getElementById("checkbox4").checked){cant++;}
+	if (cant=="1"){alert("Conoce " + cant + " lenguaje");}
+	else alert("Conoce " + cant + " lenguajes");
+	}
+</script>
+
+<form>
+<input type="checkbox" id="checkbox1">JavaScript
+<br>
+<input type="checkbox" id="checkbox2">PHP
+<br>
+<input type="checkbox" id="checkbox3">JSP
+<br>
+<input type="checkbox" id="checkbox4">VB.Net
+<br><br>
+<input type="button" value="Mostrar" onClick="contarSeleccionados()">
+</form>
+</body>
+</html>
